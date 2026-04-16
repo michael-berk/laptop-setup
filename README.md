@@ -5,19 +5,22 @@
 - VSCode
 - Smart Countdown Timer (App Store)
 - Spotify
+- Claude
+- Claude Code
 
 ## Dev Extras
 - [Superset.sh](https://superset.sh)
-- BBEdit
-- Claude
-- Claude Code
-- oh-my-zsh:
-  ```bash
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  ```
+- oh-my-zsh: `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+
+## Packages
+1. Homebrew — install and add to PATH
+2. Miniconda (not full Anaconda) — install, then run `conda init zsh`
+3. Claude Code — install via npm
+4. GitHub CLI (`gh`) — install, then authenticate via `gh auth login` using HTTPS (not SSH)
+5. Set git global `user.name` and `user.email`
 
 ## Scripts
-Copy these files from the repo to your home directory, preserving the paths:
+Copy these files from the repo to your home directory, preserving paths:
 
 | Repo path | Destination |
 |-----------|-------------|
@@ -26,30 +29,9 @@ Copy these files from the repo to your home directory, preserving the paths:
 | `dev/reset_conda_env.sh` | `~/dev/reset_conda_env.sh` |
 | `.claude/skills/resolve-pr-comments/SKILL.md` | `~/.claude/skills/resolve-pr-comments/SKILL.md` |
 | `.claude/skills/pr-fix-for-github-issue/SKILL.md` | `~/.claude/skills/pr-fix-for-github-issue/SKILL.md` |
-
-## GitHub (gh CLI)
-1. Install Homebrew (see Packages)
-2. `brew install gh`
-3. `gh auth login` → GitHub.com → HTTPS → Login with web browser
-4. `git config --global user.name "Your Name"`
-5. `git config --global user.email "your@email.com"`
-
-## Packages
-- Homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-- Conda: https://www.anaconda.com/download
-
-## VS Code
-
-Copy settings files from the repo, preserving paths:
-
-| Repo path | Destination |
-|-----------|-------------|
 | `Library/Application Support/Code/User/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
 | `Library/Application Support/Code/User/keybindings.json` | `~/Library/Application Support/Code/User/keybindings.json` |
 
-Key settings: vim mode (uses `.vimrc`), 100-char ruler, no preview tabs, large terminal scrollback, ruff linter, no df row limit, `ctrl+tab` to cycle editors.
-
 ## Claude Skills
-Skills live at `.claude/skills/` in this repo (mirroring `~/.claude/skills/`):
 - `resolve-pr-comments` — fix and resolve all unresolved comments in a GitHub PR
 - `pr-fix-for-github-issue` — end-to-end: explore root cause, TDD fix, eval loop, open PR
