@@ -36,6 +36,17 @@ Copy these files from the repo to your home directory, preserving the paths:
 ### Conda
 Download from https://www.anaconda.com/download
 
+## VS Code
+
+Copy settings files from the repo, preserving paths:
+
+| Repo path | Destination |
+|-----------|-------------|
+| `Library/Application Support/Code/User/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
+| `Library/Application Support/Code/User/keybindings.json` | `~/Library/Application Support/Code/User/keybindings.json` |
+
+Key settings: vim mode (uses `.vimrc`), 100-char ruler, no preview tabs, large terminal scrollback, ruff linter, no df row limit, `ctrl+tab` to cycle editors.
+
 ## Claude Skills
 Skills live at `.claude/skills/` in this repo (mirroring `~/.claude/skills/`):
 - `resolve-pr-comments` — fix and resolve all unresolved comments in a GitHub PR

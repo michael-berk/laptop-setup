@@ -1,0 +1,41 @@
+{
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "/Users/michael.berk/.vimrc",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "terminal.integrated.inheritEnv": false,
+    "explorer.confirmDelete": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true,
+    "editor.rulers": [
+        100
+    ],
+    "window.zoomLevel": 1,
+    "jupyter.askForKernelRestart": false,
+    "python.analysis.extraPaths": [
+        "src"
+    ],
+    "github.copilot.editor.enableAutoCompletions": true,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "python.dataFrameLimit": 0,
+    "explorer.confirmDragAndDrop": false,
+    "julia.enableTelemetry": false,
+    "workbench.editor.enablePreview": false,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.ruffEnabled": true,
+    "ruff.lint.args": [
+        "--config",
+        "ruff.toml"
+    ],
+    "python.createEnvironment.trigger": "off",
+    "terminal.integrated.scrollback": 50000,
+    "terminal.integrated.persistentSessionScrollback": 1000,
+    "makefile.configureOnOpen": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "python.analysis.typeCheckingMode": "standard",
+    "workbench.colorTheme": "Dark Modern"
+}
