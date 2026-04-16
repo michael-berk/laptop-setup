@@ -10,6 +10,7 @@
 - [Superset.sh](https://superset.sh)
 - BBEdit
 - Claude
+- Claude Code
 - oh-my-zsh:
   ```bash
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -27,14 +28,8 @@ Copy these files from the repo to your home directory, preserving the paths:
 | `.claude/skills/pr-fix-for-github-issue/SKILL.md` | `~/.claude/skills/pr-fix-for-github-issue/SKILL.md` |
 
 ## Packages
-
-### Homebrew
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-### Conda
-Download from https://www.anaconda.com/download
+- Homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+- Conda: https://www.anaconda.com/download
 
 ## VS Code
 
