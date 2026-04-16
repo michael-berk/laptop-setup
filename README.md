@@ -27,6 +27,13 @@ Copy these files from the repo to your home directory, preserving the paths:
 | `.claude/skills/resolve-pr-comments/SKILL.md` | `~/.claude/skills/resolve-pr-comments/SKILL.md` |
 | `.claude/skills/pr-fix-for-github-issue/SKILL.md` | `~/.claude/skills/pr-fix-for-github-issue/SKILL.md` |
 
+## GitHub (gh CLI)
+1. Install Homebrew (see Packages)
+2. `brew install gh`
+3. `gh auth login` → GitHub.com → HTTPS → Login with web browser
+4. `git config --global user.name "Your Name"`
+5. `git config --global user.email "your@email.com"`
+
 ## Packages
 - Homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 - Conda: https://www.anaconda.com/download
