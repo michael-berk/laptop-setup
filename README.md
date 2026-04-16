@@ -1,0 +1,42 @@
+# Laptop Setup
+
+## Apps
+- Chrome
+- VSCode
+- Smart Countdown Timer (App Store)
+- Spotify
+
+## Dev Extras
+- [Superset.sh](https://superset.sh)
+- BBEdit
+- Claude
+- oh-my-zsh:
+  ```bash
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  ```
+
+## Scripts
+Copy these files from the repo to your home directory, preserving the paths:
+
+| Repo path | Destination |
+|-----------|-------------|
+| `.zshrc` | `~/.zshrc` |
+| `.vimrc` | `~/.vimrc` |
+| `dev/reset_conda_env.sh` | `~/dev/reset_conda_env.sh` |
+| `.claude/skills/resolve-pr-comments/SKILL.md` | `~/.claude/skills/resolve-pr-comments/SKILL.md` |
+| `.claude/skills/pr-fix-for-github-issue/SKILL.md` | `~/.claude/skills/pr-fix-for-github-issue/SKILL.md` |
+
+## Packages
+
+### Homebrew
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### Conda
+Download from https://www.anaconda.com/download
+
+## Claude Skills
+Skills live at `.claude/skills/` in this repo (mirroring `~/.claude/skills/`):
+- `resolve-pr-comments` — fix and resolve all unresolved comments in a GitHub PR
+- `pr-fix-for-github-issue` — end-to-end: explore root cause, TDD fix, eval loop, open PR
